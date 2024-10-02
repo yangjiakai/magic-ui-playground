@@ -1,5 +1,6 @@
 import Image from "next/image";
-
+import { Button } from "@/components/ui/button";
+import { Marquee3D } from "@/components/marquee3D";
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -22,6 +23,11 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
+        <Button>Click me</Button>
+        <h1 className="bg-purple-600 p-3 rounded-md font-bold text-white">
+          Marquee3D
+        </h1>
+        <Marquee3D />
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
